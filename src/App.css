@@ -1,0 +1,363 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+  width: calc(33% - 40px); /* Three cards per row, adjust margins accordingly */
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.card-header {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  font-size: 16px;
+  color: #666;
+}
+
+.card-footer {
+  text-align: right;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+/* src/App.css - Update general styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e2e8f0;  /* Softer background color */
+  color: #1a202c;             /* Darker text color for better readability */
+  padding-top: 60px; /* Adjust based on the height of your navbar */
+
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Padding around sections to ensure content is not too dense */
+.section {
+  padding: 20px 0;
+}
+
+
+/* Navbar fixed at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b6cb0;
+  z-index: 1000; /* Ensures navbar stays on top of other content */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.navbar a:hover {
+  text-decoration: underline;  /* Indicates interactivity */
+}
+
+/* Additional utility for a logo or brand name */
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Home and PostItem styles - Adjust card styles */
+.post-card {
+  background: #ffffff;       /* Bright white background for cards */
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.post-card h3 {
+  margin-top: 0;
+  color: #2c5282;             /* Darker text color for headers */
+}
+
+.post-card a {
+  color: #2b6cb0;             /* Theme color for links */
+  text-decoration: none;
+}
+
+.post-card p {
+  color: #4a5568;             /* Soft gray for paragraph text */
+}
+
+/* PostPage and comments styles - Ensure consistency */
+.post-detail {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;  /* Lighter border for less visual weight */
+}
+
+.button {
+  background-color: #3182ce; /* Primary button color */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2b6cb0; /* Darken button on hover for feedback */
+}
+
+.like-button,
+.dislike-button {
+  margin-right: 5px;
+}
+
+.delete-button {
+  background-color: #e53e3e; /* Red color for delete actions */
+  color: white;
+  margin-left: 10px; /* Space it from main content */
+}
+
+.delete-button:hover {
+  background-color: #c53030; /* Darker red on hover */
+}
+
+
+/* Listen button specific styling */
+.listen-button {
+  background-color: #48bb78; /* A green color for distinctiveness */
+  color: white;              /* White text for high contrast */
+}
+
+.listen-button:hover {
+  background-color: #38a169; /* A slightly darker green on hover */
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: #48bb78;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #38a169;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  body {
+    padding-top: 100px; /* Increase padding if navbar height increases */
+  }
+}
+
+
+.comments {
+  background-color: #f9fafb; /* Light background for the comment section */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.comment {
+  padding: 10px;
+  background-color: white; /* Bright background for each comment */
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between comments */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+  margin: 0; /* Remove default margin to control spacing better */
+  color: #4a5568; /* Consistent text color */
+}
+
+.comment small {
+  display: block;
+  margin-top: 10px;
+  color: #718096; /* Subdued color for metadata like timestamps */
+}
+
+.post-detail {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space between the post detail and comments */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-container {
+  display: flex;
+  justify-content: space-between; /* Ensures spacing between main content areas */
+  gap: 20px; /* Adds space between video and comments containers */
+  padding: 20px;
+  max-width: none; /* Removes max-width limitation */
+}
+
+.video-interactions-container {
+  flex: 2; /* Takes up 1 fraction of the available space */
+  margin-right: 20px; /* Adds some space between the video and comments */
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 500px;
+  aspect-ratio: 16 / 9; /* Maintains aspect ratio */
+}
+
+.interactions-container {
+  margin-top: 20px; /* Space between video and buttons */
+}
+
+.comments-container {
+  flex: 1; /* Takes up 1 fraction of the available space, less than the video */
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: auto; /* Allows scrolling within the container if content is long */
+}
+
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+  .post-container {
+      flex-direction: column; /* Stacks video and comments vertically on smaller screens */
+  }
+
+  .video-interactions-container,
+  .comments-container {
+      flex: none; /* Resets flex sizing */
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0; /* Removes margin */
+      margin-bottom: 20px; /* Adds space below each section */
+  }
+}
+
+@media (max-width: 768px) {
+  .body, .container, .navbar {
+      padding: 10px; /* Reduces padding on very small screens */
+  }
+
+  .video-container iframe {
+      height: 300px; /* Smaller height for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
